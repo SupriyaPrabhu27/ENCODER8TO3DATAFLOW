@@ -1,4 +1,7 @@
-### ENCODER 8TO3 DATAFLOW Modelling
+## SUPRIYA PRABHU
+## 212224240165
+
+### EXP : 5 ENCODER 8TO3 DATAFLOW Modelling
 
 **AIM:**
 
@@ -40,16 +43,28 @@ Figure 02  Encoder 8 * 3
 
 **PROGRAM**
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+~~~
+module exp5(din,a,b,c);
+input [0:7] din;
+output a,b,c;
+assign a=(din[4]|din[5]|din[6]|din[7]);
+assign b=(din[2]|din[3]|din[6]|din[7]);
+assign c=(din[1]|din[3]|din[5]|din[7]);
+endmodulemodule exp5(din,a,b,c);
+~~~
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![exp5](https://github.com/user-attachments/assets/2847479d-cb4a-45fa-ab9e-283bcd2d47ad)
+
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
+
+![Screenshot (101)](https://github.com/user-attachments/assets/8ca0e1a4-9e6a-4798-9e2c-d6be3362674f)
+
 **RESULTS**
+The Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables are verified by using Verilog programming.
 
 
 
